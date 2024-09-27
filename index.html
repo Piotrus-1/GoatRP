@@ -4,131 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GoatRP - GTA V Roleplay</title>
+    <title>GoatRP - FiveM Roleplay</title>
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #222;
-            color: white;
+            font-family: 'Arial', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
         }
         header {
-            background-color: #333;
+            background-color: #1f1f1f;
             padding: 20px;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         header h1 {
             margin: 0;
-            color: #fff;
-            font-size: 2.5em;
+            color: #ffffff;
+            font-size: 3em;
+            letter-spacing: 5px;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #444;
+            background-color: #1f1f1f;
+            padding: 10px;
+            position: sticky;
+            top: 0;
         }
         nav a {
-            color: #fff;
-            padding: 15px 20px;
+            color: #ffffff;
+            padding: 15px 25px;
             text-decoration: none;
             font-size: 1.2em;
+            letter-spacing: 1px;
+            transition: background-color 0.3s;
         }
         nav a:hover {
-            background-color: #555;
+            background-color: #7d3cff;
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
         }
         .section {
-            padding: 40px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
         .section h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #7d3cff;
         }
         .section p {
+            font-size: 1.4em;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .section ul li {
             font-size: 1.2em;
-            line-height: 1.6;
+            margin-bottom: 15px;
         }
-        .section-dark {
-            background-color: #333;
-        }
-        .join-button {
+        .btn {
             display: inline-block;
             padding: 15px 30px;
-            font-size: 1.5em;
-            color: white;
-            background-color: #007bff;
-            border-radius: 5px;
+            font-size: 1.4em;
+            color: #ffffff;
+            background-color: #7d3cff;
+            border-radius: 50px;
             text-decoration: none;
-            margin-top: 20px;
+            margin-top: 30px;
+            transition: background-color 0.3s;
         }
-        .join-button:hover {
-            background-color: #0056b3;
+        .btn:hover {
+            background-color: #5a29cc;
+        }
+        .section-dark {
+            background-color: #1a1a1a;
         }
         footer {
-            background-color: #333;
+            background-color: #1f1f1f;
             padding: 20px;
             text-align: center;
-            font-size: 0.9em;
+            font-size: 1em;
+        }
+        footer p {
+            margin: 0;
+            color: #7d3cff;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>GoatRP - GTA V Roleplay</h1>
+    <h1>GoatRP - FiveM Roleplay</h1>
 </header>
 
 <nav>
-    <a href="#home">Strona Główna</a>
     <a href="#about">O Serwerze</a>
     <a href="#rules">Regulamin</a>
-    <a href="#discord">Dołącz do Discorda</a>
+    <a href="#discord">Discord</a>
+    <a href="#store">Sklep</a>
 </nav>
 
-<section id="home" class="section">
+<section id="about" class="section">
     <div class="container">
-        <h2>Witamy na GoatRP!</h2>
-        <p>GoatRP to wyjątkowy serwer GTA V Roleplay, który oferuje zarówno rozgrywkę na trybie WhiteList (WL), jak i OFF (bez WL). Nasz serwer jest stworzony z myślą o wszystkich graczach - od nowicjuszy po weteranów RP. Wejdź do świata pełnego możliwości, stwórz własną historię i przeżywaj niezapomniane chwile!</p>
-        <a href="#discord" class="join-button">Dołącz do Discorda</a>
+        <h2>O Serwerze</h2>
+        <p>GoatRP to serwer stawiający na wysokiej jakości rozgrywkę RolePlay (RP). Niezależnie od tego, czy jesteś nowicjuszem, czy weteranem RP, u nas znajdziesz miejsce dla siebie. Nasz priorytet to realizm, immersja oraz tworzenie wyjątkowych historii. Stawiamy na profesjonalne podejście do RP, a nasza społeczność dba o przestrzeganie zasad RolePlay w każdej sytuacji. Dołącz do nas, aby wcielić się w unikalne postaci i przeżywać niezapomniane przygody!</p>
+        <a href="#discord" class="btn">Dołącz do Discorda</a>
     </div>
 </section>
 
-<section id="about" class="section section-dark">
+<section id="rules" class="section section-dark">
     <div class="container">
-        <h2>O Serwerze GoatRP</h2>
-        <p>GoatRP to serwer, który stawia na wysokiej jakości rozgrywkę i aktywną społeczność. Dzięki elastycznym trybom WhiteList i OFF, każdy znajdzie tu coś dla siebie. Tryb WL zapewnia bardziej zorganizowaną i dojrzałą rozgrywkę, podczas gdy tryb OFF otwiera drzwi dla każdego, kto chce spróbować swoich sił w świecie RP.</p>
-        <p>Nasze unikalne skrypty, dopracowana ekonomia, oraz profesjonalna kadra administracyjna sprawiają, że GoatRP jest miejscem, gdzie każdy gracz znajdzie swój własny sposób na zabawę. Bez względu na to, czy chcesz zostać policjantem, gangsterem, biznesmenem czy po prostu zwykłym obywatelem - GoatRP oferuje szeroką gamę możliwości.</p>
-    </div>
-</section>
-
-<section id="rules" class="section">
-    <div class="container">
-        <h2>Regulamin Serwera</h2>
-        <p>Aby utrzymać wysoki poziom rozgrywki i przyjemną atmosferę, prosimy o przestrzeganie kilku podstawowych zasad:</p>
+        <h2>Regulamin</h2>
+        <p>Przestrzeganie poniższych zasad jest obowiązkowe, aby zapewnić przyjemną i uczciwą rozgrywkę wszystkim graczom:</p>
         <ul>
-            <li>Szanuj innych graczy - nie dopuszczamy toksycznych zachowań.</li>
-            <li>Zakaz cheatowania i wykorzystywania bugów gry.</li>
-            <li>Przestrzegaj zasad RolePlay - nie łam immersji świata RP.</li>
-            <li>W trybie WhiteList (WL) obowiązują dodatkowe zasady, które znajdziesz na naszym Discordzie.</li>
+            <li>Szanuj innych graczy oraz administratorów. Zakazane są toksyczne zachowania.</li>
+            <li>Zakaz korzystania z cheatów, exploitów oraz wykorzystywania błędów gry.</li>
+            <li>Trzymaj się zasad RolePlay. Twoje postacie muszą mieć realistyczne zachowania i cele.</li>
+            <li>Wszelkie działania OOC (Out of Character) powinny być minimalizowane, aby utrzymać immersję.</li>
+            <li>Nie ingeruj w fabułę innych graczy bez ich zgody – każdy ma prawo do swojej własnej opowieści.</li>
         </ul>
     </div>
 </section>
 
-<section id="discord" class="section section-dark">
+<section id="discord" class="section">
     <div class="container">
-        <h2>Dołącz do naszej społeczności!</h2>
-        <p>Nasza społeczność jest sercem GoatRP. Aby uzyskać więcej informacji, zadać pytania, a także dołączyć do trybu WhiteList, zapraszamy na nasz Discord!</p>
-        <a href="https://discord.gg/TwojLinkDoDiscorda" class="join-button">Wejdź na Discord</a>
+        <h2>Dołącz do Discorda</h2>
+        <p>Aby uzyskać więcej informacji, zadać pytania lub rozpocząć proces rekrutacji, dołącz do naszego Discorda! Tam znajdziesz wszelkie niezbędne informacje dotyczące serwera oraz wsparcie ze strony administracji.</p>
+        <a href="https://discord.gg/goatrp" class="btn">Wejdź na Discord</a>
+    </div>
+</section>
+
+<section id="store" class="section section-dark">
+    <div class="container">
+        <h2>Sklep</h2>
+        <p>Chcesz wspomóc rozwój serwera i jednocześnie zdobyć wyjątkowe przedmioty lub bonusy w grze? Sprawdź nasz sklep internetowy!</p>
+        <a href="https://flowtop.pl/goatrp" class="btn">Odwiedź Sklep</a>
     </div>
 </section>
 
 <footer>
-    <p>© 2024 GoatRP. Wszelkie prawa zastrzeżone. Strona stworzona dla serwera GTA V Roleplay.</p>
+    <p>© 2024 GoatRP. Wszelkie prawa zastrzeżone. Projekt graficzny i wykonanie - GoatRP Team.</p>
 </footer>
 
 </body>
